@@ -298,6 +298,30 @@ button {
   gap: 12px;
 }
 
+/* «Instalar como app»: solo aparece cuando el navegador lo permite (install.js) */
+.install-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  min-height: 44px;
+  margin-top: 12px;
+  padding: 0 4px;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font: 600 0.95rem/1 var(--font-text);
+  text-decoration: underline;
+  text-decoration-color: var(--line-strong);
+  text-underline-offset: 5px;
+}
+
+@media (hover: hover) {
+  .install-btn:hover {
+    color: var(--text);
+    text-decoration-color: currentColor;
+  }
+}
+
 /* En teléfonos los botones ocupan el ancho (más fáciles de tocar) */
 @media (max-width: 480px) {
   .hero-actions .btn {

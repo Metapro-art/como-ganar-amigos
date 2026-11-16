@@ -9,6 +9,7 @@ import { buildIndex, parseQuery, matches } from './search.js';
 import { renderChips, renderGallery, renderDeck, setActiveChip, showOnly } from './gallery.js';
 import { createViewer } from './viewer.js';
 import { toast, reducedMotion } from './ui.js';
+import { registerServiceWorker, setupInstallButton } from './install.js';
 
 const $ = (selector) => document.querySelector(selector);
 
@@ -30,6 +31,10 @@ const els = {
 
 const state = { section: 'all', query: '' };
 const wideSearch = window.matchMedia('(min-width: 1080px)');
+
+// App instalable: se activa de inmediato, sin esperar a los datos.
+registerServiceWorker();
+setupInstallButton($('[data-action="install"]'));
 
 start();
 

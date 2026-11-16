@@ -12,7 +12,7 @@ const activeLayer = () => document.querySelector('dialog[open]') ?? document.bod
 let toastTimer;
 
 /** Muestra un aviso breve (también lo anuncian los lectores de pantalla). */
-export function toast(message) {
+export function toast(message, duration = 2600) {
   const el = activeLayer().querySelector(':scope > .toast');
   if (!el) return;
   clearTimeout(toastTimer);
@@ -20,7 +20,7 @@ export function toast(message) {
   requestAnimationFrame(() => {
     el.textContent = message;
     el.classList.add('is-visible');
-    toastTimer = setTimeout(() => el.classList.remove('is-visible'), 2600);
+    toastTimer = setTimeout(() => el.classList.remove('is-visible'), duration);
   });
 }
 

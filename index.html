@@ -30,6 +30,14 @@
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 
+  <!-- App instalable (acceso directo en el celular) -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="application-name" content="Ganar amigos">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Ganar amigos">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
   <!-- Google Fonts sin bloquear el pintado: con mala señal la página se ve de
        inmediato con fuentes de respaldo y cambia a Fraunces/Hanken al llegar. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,6 +53,7 @@
   <link rel="modulepreload" href="assets/js/gallery.js">
   <link rel="modulepreload" href="assets/js/viewer.js">
   <link rel="modulepreload" href="assets/js/ui.js">
+  <link rel="modulepreload" href="assets/js/install.js">
   <script type="module" src="assets/js/app.js"></script>
 </head>
 <body>
@@ -60,6 +69,7 @@
     <symbol id="i-image" viewBox="0 0 24 24"><rect x="4.5" y="3" width="15" height="18" rx="2.5"/><path d="M8 8h8M8 11.5h5"/></symbol>
     <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11.5M7 10.5l5 5 5-5M5 19.5h14"/></symbol>
     <symbol id="i-share" viewBox="0 0 24 24"><path d="M12 14.5V3.75M8 7.5l4-4 4 4"/><path d="M8.5 10.5H7.25A2.25 2.25 0 0 0 5 12.75v5.5a2.25 2.25 0 0 0 2.25 2.25h9.5A2.25 2.25 0 0 0 19 18.25v-5.5a2.25 2.25 0 0 0-2.25-2.25H15.5"/></symbol>
+    <symbol id="i-install" viewBox="0 0 24 24"><rect x="6.5" y="2.75" width="11" height="18.5" rx="2.5"/><path d="M12 7v6.75M9.25 11 12 13.75 14.75 11M10.5 18h3"/></symbol>
     <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8.5" y="8.5" width="11" height="11" rx="2.25"/><path d="M15.5 8.5V6.75A2.25 2.25 0 0 0 13.25 4.5h-6.5A2.25 2.25 0 0 0 4.5 6.75v6.5a2.25 2.25 0 0 0 2.25 2.25H8.5"/></symbol>
   </svg>
 
@@ -82,6 +92,9 @@
             <svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg> Sorpréndeme
           </button>
         </div>
+        <button class="install-btn" type="button" data-action="install" hidden>
+          <svg class="icon" aria-hidden="true"><use href="#i-install"/></svg> Instalar como app
+        </button>
       </div>
       <div class="hero-deck" aria-hidden="true"></div>
     </div>
