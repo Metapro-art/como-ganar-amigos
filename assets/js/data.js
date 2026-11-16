@@ -7,11 +7,14 @@ const DATA_URL = 'data/cards.json';
 // y tiene número de parte, se muestra «Parte N».
 const CHIP_LABELS = { mapa: 'Mapa', hogar: 'Hogar' };
 
-// Contraste mínimo para texto pequeño (WCAG AA = 4.5), medido contra el fondo
-// claro más oscuro donde aparece texto de color: la caja «Cómo aplicarlo»
-// (--paper-2 en styles.css). Sobre el papel normal el contraste es aún mayor.
+// El sitio usa un tema oscuro. Los colores de sección de cards.json son oscuros
+// (pensados para el papel de las tarjetas), así que para texto, números y
+// detalles se usa una variante más clara del mismo tono con contraste AA
+// (WCAG = 4.5) sobre la superficie oscura más clara donde aparece texto de
+// color: la caja «Cómo aplicarlo» (--surface-2 en styles.css). Sobre el fondo
+// de la página, más oscuro, el contraste es aún mayor.
 const MIN_TEXT_CONTRAST = 4.6;
-const DARKEST_TEXT_SURFACE = '#EDE4D3';
+const TEXT_SURFACE = '#2E2822';
 
 export async function loadData() {
   const response = await fetch(DATA_URL);
@@ -20,13 +23,14 @@ export async function loadData() {
 }
 
 function prepare(raw) {
-  const ink = raw.palette?.ink ?? '#231F19';
+  // En el tema oscuro, el papel de las tarjetas es el color del texto.
+  const paper = raw.palette?.paper ?? '#F4EDE1';
 
   const sections = raw.sections.map((section) => ({
     ...section,
     chipLabel: CHIP_LABELS[section.id] ?? (section.part ? `Parte ${section.part}` : section.label),
-    // Variante del color de la sección con contraste AA para texto pequeño.
-    textColor: readableColor(section.color, DARKEST_TEXT_SURFACE, ink),
+    // Variante del color de la sección con contraste AA para texto sobre el fondo oscuro.
+    textColor: readableColor(section.color, TEXT_SURFACE, paper),
     cards: [],
   }));
   const sectionById = new Map(sections.map((s) => [s.id, s]));
@@ -115,18 +119,40 @@ function hexToRgb(hex) {
   return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
 }
 
-function mix(a, b, t) {
-  const [ra, ga, ba] = hexToRgb(a);
-  const [rb, gb, bb] = hexToRgb(b);
-  const ch = (x, y) => Math.round(x + (y - x) * t).toString(16).padStart(2, '0');
-  return `#${ch(ra, rb)}${ch(ga, gb)}${ch(ba, bb)}`;
+function rgbToHsl([r, g, b]) {
+  [r, g, b] = [r / 255, g / 255, b / 255];
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
+  const l = (max + min) / 2;
+  if (max === min) return [0, 0, l];
+  const d = max - min;
+  const s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+  const h = max === r ? (g - b) / d + (g < b ? 6 : 0) : max === g ? (b - r) / d + 2 : (r - g) / d + 4;
+  return [h / 6, s, l];
 }
 
-/** Oscurece el color hacia la tinta solo lo necesario para alcanzar el contraste mínimo. */
-function readableColor(color, background, ink) {
+function hslToHex(h, s, l) {
+  const channel = (n) => {
+    const k = (n + h * 12) % 12;
+    const a = s * Math.min(l, 1 - l);
+    const value = l - a * Math.max(-1, Math.min(k - 3, 9 - k, 1));
+    return Math.round(value * 255).toString(16).padStart(2, '0');
+  };
+  return `#${channel(0)}${channel(8)}${channel(4)}`;
+}
+
+/**
+ * Ajusta solo la luminosidad del color (mismo tono y saturación) hasta lograr
+ * el contraste mínimo sobre `surface`: lo aclara si el fondo es oscuro y lo
+ * oscurece si es claro. Los tonos casi grises (como el del mapa) usan `neutral`.
+ */
+function readableColor(color, surface, neutral) {
+  const [h, s, l] = rgbToHsl(hexToRgb(color));
+  if (s < 0.2) return neutral;
+  const step = luminance(surface) < 0.18 ? 0.01 : -0.01;
   let result = color;
-  for (let t = 0.04; contrast(result, background) < MIN_TEXT_CONTRAST && t <= 1; t += 0.04) {
-    result = mix(color, ink, t);
+  for (let light = l; contrast(result, surface) < MIN_TEXT_CONTRAST && light >= 0 && light <= 1; light += step) {
+    result = hslToHex(h, s, light);
   }
   return result;
 }
