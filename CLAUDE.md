@@ -21,6 +21,8 @@ Si algo no coincide, **detente y avisa**. No cambies de cuenta, no toques creden
 ```
 index.html              Página única: hero, barra de secciones, galería y visor (<dialog>)
 404.html                Autocontenida (estilos en línea): GitHub Pages la sirve a cualquier profundidad
+manifest.webmanifest    App instalable: nombre, iconos, colores y acceso directo al mapa
+sw.js                   Service worker: instalación y uso sin conexión (ver «App instalable»)
 .nojekyll               GitHub Pages sirve los archivos tal cual (sin Jekyll)
 assets/css/styles.css   Estilos; paleta y tipografías en las variables de :root
 assets/js/app.js        Entrada: carga datos, pinta la galería, filtros, búsqueda y rutas (#/id)
@@ -29,7 +31,8 @@ assets/js/gallery.js    Chips, grupos con miniaturas (carga diferida) y abanico 
 assets/js/viewer.js     Visor a pantalla completa: teclado, swipe, panel de texto, descargar y compartir
 assets/js/search.js     Normalización (sin tildes ni mayúsculas) y coincidencia por inicio de palabra
 assets/js/ui.js         Avisos (toast), portapapeles y escape de HTML
-assets/icons/           favicon.svg y apple-touch-icon.png (180 × 180)
+assets/js/install.js    Registra el service worker y maneja el botón «Instalar como app»
+assets/icons/           favicon.svg, apple-touch-icon.png (180) e iconos de la app (192, 512 y maskable 512)
 assets/img/og.jpg       Imagen para compartir en redes (1200 × 630)
 data/cards.json         FUENTE DE VERDAD de las tarjetas
 images/original/        PNG originales 1440 × 2560 (se ofrecen para descargar)
@@ -90,6 +93,16 @@ El script requiere **ffmpeg con libwebp** en el PATH (en Windows: `winget instal
   - Botones del inicio a lo ancho en teléfonos y visor compacto con el teléfono en horizontal (solo iconos).
   - `theme-color` oscuro y `html` con el color de fondo, para que no haya destellos claros al rebotar en iOS.
   - El buscador usa letra de 16 px, así iOS no hace zoom al enfocarlo.
+
+## App instalable (PWA)
+
+- Se puede instalar como app o acceso directo en el celular. En Android y en Chrome o Edge de computador aparece el botón «Instalar como app» del inicio, que abre el aviso del navegador. En iPhone, el botón explica cómo hacerlo: Compartir → «Agregar a inicio». Abierta como app, el botón no aparece.
+- `sw.js` maneja la caché así:
+  - **Páginas, estilos, JS y `cards.json`:** primero la red y, sin conexión, la copia guardada. Por eso los cambios publicados se ven de inmediato.
+  - **Imágenes y fuentes:** primero la copia guardada. Se guardan a medida que se ven, así que sin conexión está disponible lo ya visitado.
+- **Al agregar un módulo JS nuevo,** súmalo a `SHELL_FILES` en `sw.js`, porque `cache.addAll` falla si falta uno, y al `modulepreload` de `index.html`.
+- **Al reemplazar una imagen conservando su nombre,** sube `IMAGES_CACHE` en `sw.js` (por ejemplo, `imagenes-v2`).
+- **Iconos:** salen de `favicon.svg`. El maskable es el mismo dibujo a sangre, porque la «C» ya cabe en la zona segura. Para regenerarlos, haz una captura del SVG a 192 y 512 px con Playwright, con fondo transparente.
 
 ## Probar
 

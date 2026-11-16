@@ -12,7 +12,8 @@
 
 ## Próximas fases (pendientes)
 
-- [ ] **App instalable que funcione sin internet (PWA):** `manifest.webmanifest`, iconos y un service worker que guarde las miniaturas y, a pedido, las imágenes grandes.
+- [x] **App instalable (PWA):** manifiesto, iconos, service worker y botón «Instalar como app». Sin conexión abre la app y las tarjetas ya vistas.
+- [ ] **Uso completo sin internet:** un botón para descargar de una vez todas las tarjetas (miniaturas y grandes, unos 5,5 MB) y verlas sin conexión.
 - [ ] **Principio del día:** una tarjeta destacada en el inicio que cambie cada día.
 - [ ] **Modo práctica tipo flashcards:** ver el título y tratar de recordar la definición antes de voltear la tarjeta.
 - [ ] **Favoritos y progreso** guardados en el navegador (localStorage).
