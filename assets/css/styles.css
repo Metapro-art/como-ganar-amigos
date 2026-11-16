@@ -902,6 +902,11 @@ button {
   background: var(--night);
 }
 
+/* El visor recibe el foco al abrirse; su contenedor no necesita anillo */
+.viewer:focus {
+  outline: none;
+}
+
 @keyframes viewer-in {
   from {
     opacity: 0;

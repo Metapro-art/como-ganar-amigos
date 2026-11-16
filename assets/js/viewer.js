@@ -56,7 +56,10 @@ export function createViewer(dialog, data, { onRequestClose, onRequestNavigate, 
     document.documentElement.classList.add('has-viewer');
     dialog.showModal();
     render(card, 'enter');
-    els.close.focus();
+    // El foco va al visor (los lectores de pantalla anuncian el título de la
+    // tarjeta) y no a un botón: así no aparece un anillo de foco al abrir
+    // un enlace compartido. El primer Tab lleva al botón de cerrar.
+    dialog.focus();
   }
 
   function hide() {
@@ -320,7 +323,10 @@ export function createViewer(dialog, data, { onRequestClose, onRequestNavigate, 
     if (!focusables.length) return;
     const first = focusables[0];
     const last = focusables[focusables.length - 1];
-    if (event.shiftKey && document.activeElement === first) {
+    if (document.activeElement === dialog) {
+      event.preventDefault();
+      (event.shiftKey ? last : first).focus();
+    } else if (event.shiftKey && document.activeElement === first) {
       event.preventDefault();
       last.focus();
     } else if (!event.shiftKey && document.activeElement === last) {
