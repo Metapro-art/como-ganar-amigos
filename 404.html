@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Página no encontrada · Cómo ganar amigos</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#F4EDE1">
+  <!-- Esta página es autocontenida: GitHub Pages la muestra para cualquier ruta
+       inexistente, a cualquier profundidad, así que no usa rutas relativas. -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23A3402A'/%3E%3Cpath fill='%23F4EDE1' d='M46.75 18.28A18.5 20.5 0 1 0 46.75 45.72L43.25 42.72A10.5 14 0 1 1 43.25 21.28Z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400..800,100&family=Hanken+Grotesk:wght@400..700&display=swap">
+  <script>
+    // Raíz del sitio: «/como-ganar-amigos/» en GitHub Pages (o en el servidor
+    // local); «/» si algún día se usa un dominio propio.
+    (function () {
+      var REPO = 'como-ganar-amigos';
+      var parts = location.pathname.split('/').filter(Boolean);
+      var base = parts[0] === REPO ? '/' + REPO + '/' : '/';
+      var rest = location.pathname.slice(base.length).replace(/\/+$/, '');
+      // Si alguien escribió «…/p2-2» en lugar de «…/#/p2-2», lo llevamos a la tarjeta.
+      if (/^(mapa|parte-\d+|p\d+-\d+|regla-\d+)$/.test(rest)) {
+        location.replace(base + '#/' + rest);
+      }
+      window.SITE_BASE = base;
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+      padding: 32px max(20px, env(safe-area-inset-right)) 40px max(20px, env(safe-area-inset-left));
+      background: #F4EDE1;
+      color: #231F19;
+      font: 400 1.05rem/1.55 "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: 34rem; }
+    .eyebrow {
+      margin: 0;
+      color: #6B6256;
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .num {
+      margin: .1em 0 0;
+      color: #A3402A;
+      font: 700 clamp(6.5rem, 30vw, 11rem)/.85 "Fraunces", Georgia, serif;
+      letter-spacing: -.05em;
+    }
+    h1 {
+      margin: .5em 0 .35em;
+      font: 700 clamp(1.8rem, 6vw, 2.5rem)/1.08 "Fraunces", Georgia, serif;
+      letter-spacing: -.02em;
+    }
+    p { margin: 0 0 1.6rem; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .55em;
+      min-height: 48px;
+      padding: .75em 1.4em;
+      border-radius: 999px;
+      background: #A3402A;
+      color: #FBF7F0;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 14px 26px -16px rgb(163 64 42 / .95);
+    }
+    .btn:hover { background: #8A3522; }
+    .btn:focus-visible { outline: 3px solid #231F19; outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Cómo ganar amigos · Dale Carnegie</p>
+    <p class="num" aria-hidden="true">404</p>
+    <h1>Esta página no existe</h1>
+    <p>Puede que el enlace esté mal escrito o que la página ya no exista. Las tarjetas siguen en el inicio.</p>
+    <a class="btn" id="inicio" href="/como-ganar-amigos/">Volver al inicio <span aria-hidden="true">→</span></a>
+  </main>
+  <script>
+    document.getElementById('inicio').href = window.SITE_BASE || '/como-ganar-amigos/';
+  </script>
+</body>
+</html>
