@@ -7,6 +7,8 @@
 - [x] Galería agrupada por sección, con encabezados de número grande y carga diferida
 - [x] Visor a pantalla completa: teclado, swipe, contador, precarga, «Ver texto», descargar, compartir y URL propia por tarjeta
 - [x] Accesibilidad (foco atrapado, foco visible, contraste AA, movimiento reducido), SEO básico, Open Graph, favicon y 404
+- [x] Tema oscuro cálido, con variantes claras de los colores de sección para mantener el contraste AA
+- [x] Revisión móvil de 320 px a tablet, y en horizontal: sin desborde, objetivos táctiles de 44 px, sin zoom por doble toque, visor compacto en horizontal y fuentes que no bloquean el pintado
 
 ## Próximas fases (pendientes)
 
@@ -14,7 +16,7 @@
 - [ ] **Principio del día:** una tarjeta destacada en el inicio que cambie cada día.
 - [ ] **Modo práctica tipo flashcards:** ver el título y tratar de recordar la definición antes de voltear la tarjeta.
 - [ ] **Favoritos y progreso** guardados en el navegador (localStorage).
-- [ ] **Modo oscuro.**
+- [ ] **Interruptor claro/oscuro** (opcional): ofrecer el tema claro original como alternativa al oscuro, que hoy es el único. Los colores ya están centralizados en `:root` y `data.js` sabe calcular variantes para fondos claros.
 - [ ] **Versión en texto HTML de cada tarjeta, para SEO:** un script en `tools/` que genere el contenido indexable desde `cards.json`.
 - [ ] **Dominio propio:** archivo `CNAME`, y actualizar las URL absolutas de `index.html` y `REPO` en `404.html`.
 
@@ -38,4 +40,6 @@
 - **El visor recorre las 43 tarjetas en orden**, aunque la galería esté filtrada, y el contador es global («12 / 43»).
 - **Búsqueda por inicio de palabra**, combinada con el chip activo: «escuch» encuentra «escuchar», pero «ama» no encuentra «llamada».
 - **Panel «Ver texto» del mapa:** lista los 30 principios con enlaces, igual que la imagen. Las portadas listan los principios de su parte.
-- **Color de texto accesible:** el ocre `#946311` no llega a contraste AA en texto pequeño, así que para texto se usa una variante apenas más oscura, calculada automáticamente. En fondos y decoración se mantiene el color original.
+- **Tema oscuro por defecto** (pedido tras revisar la primera versión): el fondo es un casi-negro cálido derivado de la tinta de las tarjetas, no negro puro, y el papel pasa a ser el color del texto.
+- **Colores de sección sobre fondo oscuro:** los originales son oscuros y no sirven como texto (el morado queda en 1,7:1). `data.js` calcula una variante más clara del mismo tono con contraste AA. En rellenos y resplandores se mantiene el color original.
+- **Google Fonts sin bloquear el pintado:** en las pruebas, la hoja de fuentes llegó a tardar hasta expirar; con carga asíncrona, la página se ve de inmediato con fuentes de respaldo.

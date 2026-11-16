@@ -62,10 +62,17 @@ El script requiere **ffmpeg con libwebp** en el PATH (en Windows: `winget instal
 ## Diseño
 
 - Estética editorial cálida, de la misma familia que las tarjetas: números grandes en Fraunces como elemento gráfico, mucho aire, bordes redondeados suaves y sombras sutiles. Mobile-first; revisar siempre a 360, 768 y 1440 px.
-- Colores base: papel `#F4EDE1`, tinta `#231F19`, texto secundario `#6B6256`.
-- Colores de sección (desde el JSON): Parte 1 terracota `#A3402A`, Parte 2 ocre `#946311`, Parte 3 verde azulado `#1F5A5C`, Parte 4 morado `#4B3466`, Hogar vino `#8E3A59`.
-  - En CSS, cada sección recibe `--c` (color original, para fondos y decoración) y `--c-text`. Esta segunda variante la oscurece `data.js` solo lo necesario para lograr contraste AA en texto pequeño; hoy solo cambia el ocre.
-- Tipografías (Google Fonts, `display=swap`): **Fraunces** para títulos y números, con el eje SOFT fijo en 100 (los números redondeados de las portadas), y **Hanken Grotesk** para el texto.
+- **Tema oscuro cálido**: es la paleta de las tarjetas invertida, para que las tarjetas crema resalten como sobre una mesa. Los valores están en las variables de `:root` de `styles.css`:
+  - fondo `#1A1612`;
+  - superficies `#231F19` (la tinta de las tarjetas) y `#2E2822`;
+  - fondo del visor `#100D0A`;
+  - texto `#F4EDE1` (el papel) y texto secundario `#B5AA9A`, con 7,9:1 sobre el fondo.
+- Colores de las tarjetas (en `cards.json`): papel `#F4EDE1` y tinta `#231F19`. Colores de sección: Parte 1 terracota `#A3402A`, Parte 2 ocre `#946311`, Parte 3 verde azulado `#1F5A5C`, Parte 4 morado `#4B3466`, Hogar vino `#8E3A59`.
+  - Sobre el fondo oscuro, esos colores son ilegibles como texto (el morado queda en 1,7:1). Por eso, en CSS cada sección recibe dos variables:
+    - `--c`: el color original, para rellenos, resplandores y el fondo de las miniaturas mientras cargan.
+    - `--c-text`: una variante más clara del mismo tono que `data.js` calcula para lograr contraste AA (coral `#D67762`, dorado `#C68517`, turquesa `#37A1A4`, lavanda `#A186C1` y rosa `#C97A97`). El mapa, que es casi gris, usa el papel.
+  - Si cambias el fondo o las superficies, actualiza `TEXT_SURFACE` en `data.js`.
+- Tipografías (Google Fonts, `display=swap`): **Fraunces** para títulos y números, con el eje SOFT fijo en 100 (los números redondeados de las portadas), y **Hanken Grotesk** para el texto. La hoja de Google Fonts se carga **sin bloquear el pintado** (`preload` + `media="print"`), así que con mala señal la página se ve igual, con fuentes de respaldo.
 
 ## Comportamiento que conviene conservar
 
@@ -76,13 +83,20 @@ El script requiere **ffmpeg con libwebp** en el PATH (en Windows: `winget instal
 - **Peso:** la carga inicial solo pide las 5 miniaturas del abanico y las visibles. Las demás se piden con `IntersectionObserver` (margen de 300 px, en `gallery.js`). Las imágenes grandes solo se cargan en el visor.
 - **Búsqueda:** en vivo, sin tildes ni mayúsculas, por inicio de palabra, en título, definición y acciones. Se combina con el chip de sección activo. «/» enfoca el buscador.
 - **Accesibilidad:** `alt` desde el JSON, foco visible, contraste AA, `prefers-reduced-motion` respetado y avisos con `aria-live`.
+- **Celular:**
+  - Objetivos táctiles de al menos 44 px (los chips miden 44 px en pantallas táctiles) y letra mínima de 12 px.
+  - `touch-action: manipulation`, para que tocar rápido no haga zoom en iOS.
+  - Efectos *hover* solo con puntero (`@media (hover: hover)`), para que no se queden «pegados» al tocar.
+  - Botones del inicio a lo ancho en teléfonos y visor compacto con el teléfono en horizontal (solo iconos).
+  - `theme-color` oscuro y `html` con el color de fondo, para que no haya destellos claros al rebotar en iOS.
+  - El buscador usa letra de 16 px, así iOS no hace zoom al enfocarlo.
 
 ## Probar
 
 1. `node tools/servidor.mjs` y abre <http://localhost:8080/como-ganar-amigos/>.
 2. Revisa que la consola no tenga errores y que carguen las 43 tarjetas.
 3. Prueba el visor con teclado (Tab, ← →, Esc) y con swipe, el botón Atrás, un enlace directo como `#/p2-2`, la búsqueda (por ejemplo «sonrie», sin tilde) y los chips.
-4. Mira el sitio a 360, 768 y 1440 px.
+4. Mira el sitio a 320, 360, 390 y 768 px, con un teléfono en horizontal (740 × 360) y a 1440 px. Comprueba que no haya desplazamiento horizontal y que la tarjeta del visor quepa completa entre las barras.
 
 Con Playwright, `npx playwright screenshot --viewport-size "360, 740" <url> captura.png` saca capturas rápidas. En la v1 se usó además un script de pruebas fuera del repo; agregarlo al repo está en el ROADMAP.
 
