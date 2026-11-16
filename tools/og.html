@@ -21,28 +21,36 @@
       height: 630px;
       overflow: hidden;
       position: relative;
-      background: #F4EDE1;
-      color: #231F19;
+      background: #1A1612;
+      color: #F4EDE1;
       font-family: "Hanken Grotesk", system-ui, sans-serif;
       -webkit-font-smoothing: antialiased;
     }
     .text { position: absolute; left: 84px; top: 92px; width: 560px; }
-    .eyebrow { margin: 0; color: #6B6256; font-size: 19px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
+    .eyebrow { margin: 0; color: #B5AA9A; font-size: 19px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
     h1 {
       margin: 26px 0 0;
       font: 700 86px/.95 "Fraunces", Georgia, serif;
       letter-spacing: -.035em;
     }
-    h1 span { display: block; margin-top: 18px; color: #6B6256; font-size: 45px; font-style: italic; font-weight: 400; line-height: 1.12; letter-spacing: -.01em; }
+    h1 span { display: block; margin-top: 18px; color: #B5AA9A; font-size: 45px; font-style: italic; font-weight: 400; line-height: 1.12; letter-spacing: -.01em; }
     .lead { margin: 34px 0 0; font-size: 27px; line-height: 1.35; max-width: 470px; }
     .dots { position: absolute; left: 84px; bottom: 74px; display: flex; gap: 12px; }
     .dots i { width: 18px; height: 18px; border-radius: 50%; }
+    .glow {
+      position: absolute;
+      right: -120px;
+      top: -90px;
+      width: 760px;
+      height: 760px;
+      background: radial-gradient(closest-side, rgb(163 64 42 / .32), rgb(163 64 42 / .08) 55%, transparent);
+    }
     .cards { position: absolute; right: 70px; top: 44px; width: 420px; height: 600px; }
     .cards img {
       position: absolute;
       width: 330px;
       border-radius: 18px;
-      box-shadow: 0 2px 6px rgb(35 31 25 / .1), 0 34px 60px -22px rgb(35 31 25 / .55);
+      box-shadow: 0 0 0 1px rgb(244 237 225 / .08), 0 34px 60px -20px rgb(0 0 0 / .9);
     }
     .back { left: 98px; top: 34px; transform: rotate(7deg); }
     .front { left: 0; top: 0; transform: rotate(-4deg); }
@@ -55,8 +63,9 @@
     <p class="lead">30 principios y 7 reglas en tarjetas de referencia rápida.</p>
   </div>
   <div class="dots" aria-hidden="true">
-    <i style="background:#A3402A"></i><i style="background:#946311"></i><i style="background:#1F5A5C"></i><i style="background:#4B3466"></i><i style="background:#8E3A59"></i>
+    <i style="background:#D67762"></i><i style="background:#C68517"></i><i style="background:#37A1A4"></i><i style="background:#A186C1"></i><i style="background:#C97A97"></i>
   </div>
+  <div class="glow" aria-hidden="true"></div>
   <div class="cards">
     <img class="back" src="../images/large/01_Parte1_portada.webp" alt="">
     <img class="front" src="../images/large/00_Mapa_de_los_30_principios.webp" alt="">
