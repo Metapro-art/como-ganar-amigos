@@ -1,0 +1,842 @@
+{
+  "meta": {
+    "book": "Cómo ganar amigos e influir sobre las personas",
+    "author": "Dale Carnegie",
+    "language": "es",
+    "totalCards": 43,
+    "principles": 30,
+    "rules": 7,
+    "image": {
+      "width": 1440,
+      "height": 2560,
+      "format": "png"
+    },
+    "note": "Textos redactados como síntesis propia de cada capítulo; no son citas textuales del libro."
+  },
+  "palette": {
+    "paper": "#F4EDE1",
+    "ink": "#231F19",
+    "muted": "#6B6256"
+  },
+  "fonts": {
+    "titles": "Fraunces",
+    "text": "Hanken Grotesk"
+  },
+  "sections": [
+    {
+      "id": "mapa",
+      "label": "Mapa general",
+      "name": "Los 30 principios en una sola imagen",
+      "color": "#231F19"
+    },
+    {
+      "id": "p1",
+      "part": 1,
+      "label": "Técnicas fundamentales",
+      "name": "Técnicas fundamentales para tratar con las personas",
+      "summary": "La base de todo trato humano: deja de criticar, valora de verdad a las personas y piensa siempre en lo que el otro quiere.",
+      "color": "#A3402A",
+      "unit": "principio",
+      "count": 3
+    },
+    {
+      "id": "p2",
+      "part": 2,
+      "label": "Cómo agradar a los demás",
+      "name": "Seis maneras de agradar a los demás",
+      "summary": "La gente te aprecia cuando tú la aprecias primero: interés genuino, una sonrisa, su nombre, escucha atenta, sus temas y su valor.",
+      "color": "#946311",
+      "unit": "principio",
+      "count": 6
+    },
+    {
+      "id": "p3",
+      "part": 3,
+      "label": "Cómo convencer",
+      "name": "Cómo lograr que los demás piensen como tú",
+      "summary": "Convencer no es vencer. Evita la pelea, respeta, escucha y deja que el otro llegue por su cuenta a tu idea.",
+      "color": "#1F5A5C",
+      "unit": "principio",
+      "count": 12
+    },
+    {
+      "id": "p4",
+      "part": 4,
+      "label": "Sé un líder",
+      "name": "Sé un líder: cómo cambiar a los demás sin ofenderlos ni generar resentimiento",
+      "summary": "Corregir sin herir: cambia la conducta de los demás cuidando su orgullo, su dignidad y sus ganas de mejorar.",
+      "color": "#4B3466",
+      "unit": "principio",
+      "count": 9
+    },
+    {
+      "id": "hogar",
+      "part": 6,
+      "label": "Vida en el hogar",
+      "name": "Siete reglas para hacer más feliz tu vida en el hogar",
+      "summary": "Los mismos principios, aplicados a quien más quieres: menos reproches y críticas; más aceptación, aprecio, detalles y cortesía.",
+      "color": "#8E3A59",
+      "unit": "regla",
+      "count": 7,
+      "note": "Sección de la edición original (1936)"
+    }
+  ],
+  "cards": [
+    {
+      "order": 0,
+      "id": "mapa",
+      "file": "00_Mapa_de_los_30_principios.png",
+      "type": "mapa",
+      "section": "mapa",
+      "title": "Los 30 principios",
+      "subtitle": "Cómo ganar amigos e influir sobre las personas",
+      "alt": "Mapa con los 30 principios del libro, agrupados en sus 4 partes."
+    },
+    {
+      "order": 1,
+      "id": "parte-1",
+      "file": "01_Parte1_portada.png",
+      "type": "portada",
+      "section": "p1",
+      "title": "Parte 1: Técnicas fundamentales para tratar con las personas",
+      "summary": "La base de todo trato humano: deja de criticar, valora de verdad a las personas y piensa siempre en lo que el otro quiere.",
+      "alt": "Portada de la Parte 1: Técnicas fundamentales para tratar con las personas. Incluye 3 principios."
+    },
+    {
+      "order": 2,
+      "id": "p1-1",
+      "file": "02_P1.1_no-critiques-no-condenes.png",
+      "type": "principio",
+      "section": "p1",
+      "number": 1,
+      "globalNumber": 1,
+      "title": "No critiques, no condenes, no te quejes",
+      "subtitle": null,
+      "short": "No critiques, no condenes, no te quejes",
+      "definition": "Criticar es inútil y peligroso: pone al otro a la defensiva, lo empuja a justificarse y hiere su orgullo, dejando un resentimiento que puede durar años. Casi nadie se culpa a sí mismo, aunque esté equivocado. En vez de juzgar, intenta entender por qué la persona actúa así: comprender genera tolerancia y abre la puerta al cambio.",
+      "howTo": [
+        "Antes de reprochar, pregúntate: “¿por qué actuó así?”",
+        "Cambia la queja por una petición concreta",
+        "Si escribes algo con rabia, espera un día para enviarlo"
+      ],
+      "alt": "Tarjeta del principio 1 de la Parte 1: No critiques, no condenes, no te quejes."
+    },
+    {
+      "order": 3,
+      "id": "p1-2",
+      "file": "03_P1.2_muestra-aprecio-honesto-y.png",
+      "type": "principio",
+      "section": "p1",
+      "number": 2,
+      "globalNumber": 2,
+      "title": "Muestra aprecio honesto y sincero",
+      "subtitle": null,
+      "short": "Muestra aprecio honesto y sincero",
+      "definition": "Una de las necesidades más profundas del ser humano es sentirse importante y valorado. Reconocer con honestidad lo bueno que hacen los demás satisface ese anhelo y despierta lo mejor de ellos. No es adulación: el halago es falso e interesado, y se nota; el aprecio genuino es concreto, generoso y no pide nada a cambio.",
+      "howTo": [
+        "Sé específico: di qué hizo bien y por qué importa",
+        "Agradece en el momento, no “algún día”",
+        "Busca cada día algo valioso en alguien y díselo"
+      ],
+      "alt": "Tarjeta del principio 2 de la Parte 1: Muestra aprecio honesto y sincero."
+    },
+    {
+      "order": 4,
+      "id": "p1-3",
+      "file": "04_P1.3_despierta-en-los-demas.png",
+      "type": "principio",
+      "section": "p1",
+      "number": 3,
+      "globalNumber": 3,
+      "title": "Despierta en los demás un deseo vehemente",
+      "subtitle": null,
+      "short": "Despierta en los demás un deseo vehemente",
+      "definition": "A cada persona la mueve lo que ella quiere, no lo que quieres tú. Para pescar no usas la carnada que te gusta a ti, sino la que le gusta al pez. Antes de pedir algo, piensa en los deseos del otro y muéstrale cómo conseguirlos haciendo lo que le propones.",
+      "howTo": [
+        "Antes de pedir, pregúntate: “¿qué gana el otro con esto?”",
+        "Habla de sus objetivos, no de tus necesidades",
+        "Muestra el beneficio, no la obligación"
+      ],
+      "alt": "Tarjeta del principio 3 de la Parte 1: Despierta en los demás un deseo vehemente."
+    },
+    {
+      "order": 5,
+      "id": "parte-2",
+      "file": "05_Parte2_portada.png",
+      "type": "portada",
+      "section": "p2",
+      "title": "Parte 2: Seis maneras de agradar a los demás",
+      "summary": "La gente te aprecia cuando tú la aprecias primero: interés genuino, una sonrisa, su nombre, escucha atenta, sus temas y su valor.",
+      "alt": "Portada de la Parte 2: Seis maneras de agradar a los demás. Incluye 6 principios."
+    },
+    {
+      "order": 6,
+      "id": "p2-1",
+      "file": "06_P2.1_interesate-sinceramente-por-los.png",
+      "type": "principio",
+      "section": "p2",
+      "number": 1,
+      "globalNumber": 4,
+      "title": "Interésate sinceramente por los demás",
+      "subtitle": null,
+      "short": "Interésate sinceramente por los demás",
+      "definition": "A cada persona le interesa, ante todo, ella misma. Por eso conectas mucho más rápido mostrando curiosidad genuina por la vida, los logros y las preocupaciones de otros que intentando impresionarlos. El interés real no se finge: se demuestra con tiempo, atención y pequeños detalles. Los demás se interesan en ti cuando tú te interesas en ellos.",
+      "howTo": [
+        "Pregunta por su vida y retoma lo que te contó",
+        "Recuerda cumpleaños, logros y fechas importantes",
+        "Saluda con entusiasmo y dedica tiempo real"
+      ],
+      "alt": "Tarjeta del principio 1 de la Parte 2: Interésate sinceramente por los demás."
+    },
+    {
+      "order": 7,
+      "id": "p2-2",
+      "file": "07_P2.2_sonrie.png",
+      "type": "principio",
+      "section": "p2",
+      "number": 2,
+      "globalNumber": 5,
+      "title": "Sonríe",
+      "subtitle": null,
+      "short": "Sonríe",
+      "definition": "Una sonrisa sincera dice sin palabras: “me alegra verte”. Es la forma más sencilla de generar confianza y buena disposición, y contagia el ánimo de quien la recibe. Tiene que ser auténtica —la fingida se nota— y funciona incluso por teléfono, porque se escucha en la voz. Y si no tienes ganas, actuar con alegría ayuda a sentirla.",
+      "howTo": [
+        "Sonríe antes de entrar a una reunión o contestar una llamada",
+        "Sonríe también con los ojos, no solo con la boca",
+        "Saluda primero, con calidez y mirando a los ojos"
+      ],
+      "alt": "Tarjeta del principio 2 de la Parte 2: Sonríe."
+    },
+    {
+      "order": 8,
+      "id": "p2-3",
+      "file": "08_P2.3_recuerda-y-usa-el.png",
+      "type": "principio",
+      "section": "p2",
+      "number": 3,
+      "globalNumber": 6,
+      "title": "Recuerda el nombre de las personas",
+      "subtitle": "Para cada quien, su nombre es el sonido más dulce e importante",
+      "short": "Recuerda y usa el nombre de cada persona",
+      "definition": "Nuestro nombre es parte de nuestra identidad: escucharlo nos hace sentir reconocidos y únicos. Recordarlo y usarlo con naturalidad es un cumplido sutil y muy poderoso; olvidarlo o escribirlo mal transmite indiferencia. Recordar nombres no es un talento innato: es un hábito que se construye con atención e intención.",
+      "howTo": [
+        "Repítelo al saludar: “Mucho gusto, Laura”",
+        "Si no lo entendiste, pide que lo repita o lo deletree",
+        "Asócialo a un rasgo y anótalo después"
+      ],
+      "alt": "Tarjeta del principio 3 de la Parte 2: Recuerda el nombre de las personas."
+    },
+    {
+      "order": 9,
+      "id": "p2-4",
+      "file": "09_P2.4_se-un-buen-oyente.png",
+      "type": "principio",
+      "section": "p2",
+      "number": 4,
+      "globalNumber": 7,
+      "title": "Sé un buen oyente",
+      "subtitle": "Anima a los demás a hablar de sí mismos",
+      "short": "Sé un buen oyente: que hablen de sí mismos",
+      "definition": "Escuchar con atención total es uno de los mayores halagos que puedes hacerle a alguien. La mayoría de las personas no busca un gran conversador, sino a alguien que de verdad las escuche. Haz preguntas que el otro disfrute responder y deja que hable de sí mismo: terminará recordándote como alguien con quien da gusto conversar.",
+      "howTo": [
+        "Guarda el celular y mira a la persona",
+        "Haz preguntas abiertas sobre sus experiencias",
+        "No interrumpas ni prepares tu respuesta mientras habla"
+      ],
+      "alt": "Tarjeta del principio 4 de la Parte 2: Sé un buen oyente."
+    },
+    {
+      "order": 10,
+      "id": "p2-5",
+      "file": "10_P2.5_habla-de-lo-que.png",
+      "type": "principio",
+      "section": "p2",
+      "number": 5,
+      "globalNumber": 8,
+      "title": "Habla de lo que le interesa a la otra persona",
+      "subtitle": null,
+      "short": "Habla de lo que le interesa al otro",
+      "definition": "El camino más corto al corazón de alguien es conversar sobre lo que más le importa. Theodore Roosevelt, antes de recibir a un visitante, leía la noche anterior sobre sus temas favoritos. Descubre qué apasiona al otro y lleva la conversación hacia allá: ganarás su atención, su simpatía y, de paso, aprenderás algo nuevo.",
+      "howTo": [
+        "Antes de una reunión importante, investiga sus intereses",
+        "Pregunta: “¿Qué es lo que más disfrutas de…?”",
+        "Habla de tus temas solo cuando el otro pregunte"
+      ],
+      "alt": "Tarjeta del principio 5 de la Parte 2: Habla de lo que le interesa a la otra persona."
+    },
+    {
+      "order": 11,
+      "id": "p2-6",
+      "file": "11_P2.6_haz-que-el-otro.png",
+      "type": "principio",
+      "section": "p2",
+      "number": 6,
+      "globalNumber": 9,
+      "title": "Haz que la otra persona se sienta importante",
+      "subtitle": "Y hazlo con sinceridad",
+      "short": "Haz que el otro se sienta importante",
+      "definition": "Todos queremos sentir que valemos y que alguien lo nota. Hacer que otro se sienta importante —con respeto, cortesía y reconocimiento— es la regla de oro de las relaciones: trata a los demás como te gustaría ser tratado. La clave está en la sinceridad: casi cualquier persona es mejor que tú en algo; descúbrelo y reconócelo.",
+      "howTo": [
+        "Usa siempre “por favor”, “gracias” y “¿te molestaría…?”",
+        "Reconoce en voz alta en qué es mejor que tú",
+        "Pide su opinión y tenla en cuenta de verdad"
+      ],
+      "alt": "Tarjeta del principio 6 de la Parte 2: Haz que la otra persona se sienta importante."
+    },
+    {
+      "order": 12,
+      "id": "parte-3",
+      "file": "12_Parte3_portada.png",
+      "type": "portada",
+      "section": "p3",
+      "title": "Parte 3: Cómo lograr que los demás piensen como tú",
+      "summary": "Convencer no es vencer. Evita la pelea, respeta, escucha y deja que el otro llegue por su cuenta a tu idea.",
+      "alt": "Portada de la Parte 3: Cómo lograr que los demás piensen como tú. Incluye 12 principios."
+    },
+    {
+      "order": 13,
+      "id": "p3-1",
+      "file": "13_P3.1_gana-una-discusion-evitandola.png",
+      "type": "principio",
+      "section": "p3",
+      "number": 1,
+      "globalNumber": 10,
+      "title": "La única forma de ganar una discusión es evitarla",
+      "subtitle": null,
+      "short": "Gana una discusión evitándola",
+      "definition": "En una discusión nadie gana: si pierdes, pierdes; y si ganas, humillas al otro, hieres su orgullo y él sigue pensando igual. Quien es convencido contra su voluntad conserva su opinión. Evitar la pelea no es rendirse: es elegir la relación y el resultado por encima de tener la razón.",
+      "howTo": [
+        "Agradece el desacuerdo: te muestra lo que no ves",
+        "Desconfía de tu primera reacción defensiva",
+        "Busca puntos de acuerdo y, si hace falta, pospón la decisión"
+      ],
+      "alt": "Tarjeta del principio 1 de la Parte 3: La única forma de ganar una discusión es evitarla."
+    },
+    {
+      "order": 14,
+      "id": "p3-2",
+      "file": "14_P3.2_respeta-nunca-digas-estas.png",
+      "type": "principio",
+      "section": "p3",
+      "number": 2,
+      "globalNumber": 11,
+      "title": "Respeta las opiniones ajenas",
+      "subtitle": "Nunca le digas a nadie “estás equivocado”",
+      "short": "Respeta: nunca digas “estás equivocado”",
+      "definition": "Decirle a alguien que está equivocado —con palabras, un gesto o el tono— es atacar su inteligencia y su orgullo; lo obliga a defenderse en lugar de reflexionar. Si quieres que cambie de opinión, abre la puerta con humildad: “Puede que me equivoque; revisemos juntos los hechos”. Así el otro puede corregirse sin quedar mal.",
+      "howTo": [
+        "Cambia “estás mal” por “yo lo veo distinto, ¿y si…?”",
+        "Evita absolutos como “obviamente”, “siempre” o “nunca”",
+        "Reconoce primero lo que el otro tiene de razón"
+      ],
+      "alt": "Tarjeta del principio 2 de la Parte 3: Respeta las opiniones ajenas."
+    },
+    {
+      "order": 15,
+      "id": "p3-3",
+      "file": "15_P3.3_si-te-equivocas-admitelo.png",
+      "type": "principio",
+      "section": "p3",
+      "number": 3,
+      "globalNumber": 12,
+      "title": "Si te equivocas, admítelo rápida y enfáticamente",
+      "subtitle": null,
+      "short": "Si te equivocas, admítelo de inmediato",
+      "definition": "Reconocer tu error antes de que otro lo señale desarma cualquier crítica: la otra persona suele volverse comprensiva, incluso generosa. Defender lo indefendible solo genera más tensión. Admitirlo con claridad exige carácter, inspira respeto y trae alivio. Cualquiera puede justificarse; pocos tienen el valor de decir “me equivoqué”.",
+      "howTo": [
+        "Dilo tú primero, antes de que te lo reclamen",
+        "Sin “peros” ni excusas: asume la responsabilidad",
+        "Propón cómo lo vas a corregir"
+      ],
+      "alt": "Tarjeta del principio 3 de la Parte 3: Si te equivocas, admítelo rápida y enfáticamente."
+    },
+    {
+      "order": 16,
+      "id": "p3-4",
+      "file": "16_P3.4_empieza-de-manera-amistosa.png",
+      "type": "principio",
+      "section": "p3",
+      "number": 4,
+      "globalNumber": 13,
+      "title": "Empieza de manera amistosa",
+      "subtitle": null,
+      "short": "Empieza de manera amistosa",
+      "definition": "Si llegas con los puños cerrados, el otro cerrará los suyos; si llegas con amabilidad, abrirás su disposición a escucharte. Un tono cordial, incluso en medio de un desacuerdo, desactiva la resistencia y facilita el acuerdo. Como en la fábula, el sol consigue con calidez lo que el viento no logra con fuerza.",
+      "howTo": [
+        "Abre la conversación con algo en lo que coincidan",
+        "Cuida el tono, sobre todo cuando estás molesto",
+        "Reconoce el esfuerzo del otro antes de plantear el problema"
+      ],
+      "alt": "Tarjeta del principio 4 de la Parte 3: Empieza de manera amistosa."
+    },
+    {
+      "order": 17,
+      "id": "p3-5",
+      "file": "17_P3.5_logra-un-si-si.png",
+      "type": "principio",
+      "section": "p3",
+      "number": 5,
+      "globalNumber": 14,
+      "title": "Logra que la otra persona diga “sí, sí” desde el principio",
+      "subtitle": null,
+      "short": "Logra un “sí, sí” desde el principio",
+      "definition": "Empieza por los puntos en los que están de acuerdo y haz preguntas cuya respuesta natural sea “sí”. Cada “sí” crea un impulso positivo; un “no” temprano, en cambio, compromete el orgullo de quien lo dice y es difícil de revertir. Es el método de Sócrates: avanzar de acuerdo en acuerdo hasta llegar a la conclusión.",
+      "howTo": [
+        "Empieza por los objetivos que ambos comparten",
+        "Haz preguntas fáciles de responder con un “sí”",
+        "Deja los puntos de desacuerdo para después"
+      ],
+      "alt": "Tarjeta del principio 5 de la Parte 3: Logra que la otra persona diga “sí, sí” desde el principio."
+    },
+    {
+      "order": 18,
+      "id": "p3-6",
+      "file": "18_P3.6_deja-que-el-otro.png",
+      "type": "principio",
+      "section": "p3",
+      "number": 6,
+      "globalNumber": 15,
+      "title": "Deja que la otra persona sea quien más hable",
+      "subtitle": null,
+      "short": "Deja que el otro hable más",
+      "definition": "Cuando hablamos demasiado intentando convencer, el otro se cierra. Deja que exprese todo lo que piensa: nadie conoce mejor que él sus problemas y sus necesidades. Escúchalo con paciencia y mente abierta, sin interrumpir aunque no estés de acuerdo. Quien se siente escuchado está mucho más dispuesto a escucharte.",
+      "howTo": [
+        "Pregunta y deja que se explaye",
+        "Resiste la tentación de interrumpir para corregir",
+        "Resume lo que dijo antes de dar tu punto de vista"
+      ],
+      "alt": "Tarjeta del principio 6 de la Parte 3: Deja que la otra persona sea quien más hable."
+    },
+    {
+      "order": 19,
+      "id": "p3-7",
+      "file": "19_P3.7_que-sienta-que-la.png",
+      "type": "principio",
+      "section": "p3",
+      "number": 7,
+      "globalNumber": 16,
+      "title": "Deja que la otra persona sienta que la idea es suya",
+      "subtitle": null,
+      "short": "Que sienta que la idea es suya",
+      "definition": "Las personas defienden con mucho más entusiasmo las ideas que sienten propias que las que les imponen. En lugar de entregar la solución hecha, haz sugerencias, plantea preguntas y deja que el otro llegue a la conclusión. Pierdes protagonismo, pero ganas compromiso: ya nadie tendrá que convencerlo.",
+      "howTo": [
+        "Siembra la idea con una pregunta: “¿Y si probamos…?”",
+        "Pide su opinión antes de dar la tuya",
+        "Reconoce públicamente su aporte"
+      ],
+      "alt": "Tarjeta del principio 7 de la Parte 3: Deja que la otra persona sienta que la idea es suya."
+    },
+    {
+      "order": 20,
+      "id": "p3-8",
+      "file": "20_P3.8_mira-las-cosas-desde.png",
+      "type": "principio",
+      "section": "p3",
+      "number": 8,
+      "globalNumber": 17,
+      "title": "Intenta honestamente ver las cosas desde el punto de vista del otro",
+      "subtitle": null,
+      "short": "Mira las cosas desde su punto de vista",
+      "definition": "Nadie cree estar del todo equivocado: detrás de cada actitud hay razones que, para esa persona, tienen sentido. Descubre esas razones y tendrás la clave de su comportamiento. Ponerte en sus zapatos —y hacérselo saber— suaviza el desacuerdo, genera cooperación y te permite plantear tu idea en términos que el otro pueda aceptar.",
+      "howTo": [
+        "Pregúntate: “¿Cómo me sentiría yo en su lugar?”",
+        "Antes de una reunión, anota qué quiere el otro y por qué",
+        "Dilo en voz alta: “Entiendo por qué lo ves así”"
+      ],
+      "alt": "Tarjeta del principio 8 de la Parte 3: Intenta honestamente ver las cosas desde el punto de vista del otro."
+    },
+    {
+      "order": 21,
+      "id": "p3-9",
+      "file": "21_P3.9_comprende-sus-ideas-y.png",
+      "type": "principio",
+      "section": "p3",
+      "number": 9,
+      "globalNumber": 18,
+      "title": "Sé comprensivo con las ideas y los deseos de los demás",
+      "subtitle": null,
+      "short": "Comprende sus ideas y sus deseos",
+      "definition": "Casi todas las personas anhelan comprensión. Una frase como “entiendo que te sientas así; en tu lugar, yo sentiría lo mismo” calma discusiones, disuelve la mala voluntad y hace que el otro te escuche. Validar su emoción no significa darle la razón: significa reconocer que tiene motivos para sentir lo que siente.",
+      "howTo": [
+        "Valida la emoción antes de discutir los hechos",
+        "Pregunta qué necesita, no solo qué pasó",
+        "Evita minimizar: nada de “no es para tanto”"
+      ],
+      "alt": "Tarjeta del principio 9 de la Parte 3: Sé comprensivo con las ideas y los deseos de los demás."
+    },
+    {
+      "order": 22,
+      "id": "p3-10",
+      "file": "22_P3.10_apela-a-los-motivos.png",
+      "type": "principio",
+      "section": "p3",
+      "number": 10,
+      "globalNumber": 19,
+      "title": "Apela a los motivos más nobles",
+      "subtitle": null,
+      "short": "Apela a los motivos más nobles",
+      "definition": "Solemos tener dos razones para actuar: una que suena bien y la verdadera. Y en el fondo, casi todos nos vemos como personas honestas y justas. Si apelas a ese lado noble —su sentido de la justicia, su palabra, su integridad—, tiendes a obtener lo mejor de ellos, porque querrán estar a la altura de esa imagen.",
+      "howTo": [
+        "Asume buena fe: “Sé que eres una persona justa”",
+        "Apela a valores: honestidad, palabra, responsabilidad",
+        "Recuérdale al otro su mejor versión, no su peor error"
+      ],
+      "alt": "Tarjeta del principio 10 de la Parte 3: Apela a los motivos más nobles."
+    },
+    {
+      "order": 23,
+      "id": "p3-11",
+      "file": "23_P3.11_dramatiza-tus-ideas.png",
+      "type": "principio",
+      "section": "p3",
+      "number": 11,
+      "globalNumber": 20,
+      "title": "Dramatiza tus ideas",
+      "subtitle": null,
+      "short": "Dramatiza tus ideas",
+      "definition": "Una idea expuesta de forma plana se olvida; una que se muestra de manera vívida convence. Una demostración, una historia, un objeto o un dato presentado con impacto llegan más lejos que cualquier argumento abstracto. Dramatizar no es exagerar: es presentar tu idea para que se vea, se sienta y se recuerde.",
+      "howTo": [
+        "Muestra en lugar de explicar: lleva un ejemplo o prototipo",
+        "Cuenta una historia en vez de soltar cifras",
+        "Usa contrastes visuales: el antes y el después"
+      ],
+      "alt": "Tarjeta del principio 11 de la Parte 3: Dramatiza tus ideas."
+    },
+    {
+      "order": 24,
+      "id": "p3-12",
+      "file": "24_P3.12_lanza-un-desafio.png",
+      "type": "principio",
+      "section": "p3",
+      "number": 12,
+      "globalNumber": 21,
+      "title": "Lanza un desafío",
+      "subtitle": null,
+      "short": "Lanza un desafío",
+      "definition": "Cuando nada más funciona, despierta el deseo de superarse. Lo que más motiva a las personas no es solo el dinero, sino la oportunidad de demostrar lo que valen, de destacar y de ganar. Un reto bien planteado —con respeto y sin humillar— convierte una tarea en un juego que vale la pena ganar.",
+      "howTo": [
+        "Haz visible la meta: un récord, un marcador, una cifra",
+        "Di: “Es difícil, pero creo que tú puedes lograrlo”",
+        "Usa la competencia sana, nunca la humillación"
+      ],
+      "alt": "Tarjeta del principio 12 de la Parte 3: Lanza un desafío."
+    },
+    {
+      "order": 25,
+      "id": "parte-4",
+      "file": "25_Parte4_portada.png",
+      "type": "portada",
+      "section": "p4",
+      "title": "Parte 4: Sé un líder: cómo cambiar a los demás sin ofenderlos ni generar resentimiento",
+      "summary": "Corregir sin herir: cambia la conducta de los demás cuidando su orgullo, su dignidad y sus ganas de mejorar.",
+      "alt": "Portada de la Parte 4: Sé un líder: cómo cambiar a los demás sin ofenderlos ni generar resentimiento. Incluye 9 principios."
+    },
+    {
+      "order": 26,
+      "id": "p4-1",
+      "file": "26_P4.1_empieza-con-elogios-sinceros.png",
+      "type": "principio",
+      "section": "p4",
+      "number": 1,
+      "globalNumber": 22,
+      "title": "Empieza con elogios y aprecio sincero",
+      "subtitle": null,
+      "short": "Empieza con elogios sinceros",
+      "definition": "Es más fácil escuchar algo incómodo después de oír lo que hacemos bien. Así como el barbero enjabona antes de afeitar, un reconocimiento honesto prepara el terreno para la corrección y baja las defensas. El elogio tiene que ser real y específico: si suena a fórmula para suavizar el golpe, pierde todo su efecto.",
+      "howTo": [
+        "Empieza por un logro concreto y verdadero",
+        "Luego plantea lo que quieres mejorar",
+        "No uses el elogio como anestesia falsa"
+      ],
+      "alt": "Tarjeta del principio 1 de la Parte 4: Empieza con elogios y aprecio sincero."
+    },
+    {
+      "order": 27,
+      "id": "p4-2",
+      "file": "27_P4.2_senala-los-errores-de.png",
+      "type": "principio",
+      "section": "p4",
+      "number": 2,
+      "globalNumber": 23,
+      "title": "Señala los errores de los demás de forma indirecta",
+      "subtitle": null,
+      "short": "Señala los errores de forma indirecta",
+      "definition": "Una crítica directa hiere el orgullo y genera resistencia. Señalar el error de manera indirecta permite que la persona lo descubra por sí misma y lo corrija sin sentirse humillada. Un detalle clave: cambia el “pero” por un “y”. “Hiciste un gran trabajo, pero…” anula el elogio; “hiciste un gran trabajo, y si además…” lo refuerza.",
+      "howTo": [
+        "Después de un elogio, usa “y” en lugar de “pero”",
+        "Da el ejemplo con tu propio comportamiento",
+        "Sugiere la mejora sin señalar con el dedo"
+      ],
+      "alt": "Tarjeta del principio 2 de la Parte 4: Señala los errores de los demás de forma indirecta."
+    },
+    {
+      "order": 28,
+      "id": "p4-3",
+      "file": "28_P4.3_habla-primero-de-tus.png",
+      "type": "principio",
+      "section": "p4",
+      "number": 3,
+      "globalNumber": 24,
+      "title": "Habla de tus propios errores antes de criticar los del otro",
+      "subtitle": null,
+      "short": "Habla primero de tus propios errores",
+      "definition": "Corregir a alguien es mucho más fácil si antes reconoces con humildad que tú también te has equivocado. Admitir tus fallos te pone a su lado y no por encima, y hace que la corrección se sienta como un consejo entre iguales. Nadie es perfecto: mostrarlo genera confianza y disposición a cambiar.",
+      "howTo": [
+        "Empieza con: “A mí también me pasó…”",
+        "Cuenta qué aprendiste de tu propio error",
+        "Sugiere desde la experiencia, no desde la autoridad"
+      ],
+      "alt": "Tarjeta del principio 3 de la Parte 4: Habla de tus propios errores antes de criticar los del otro."
+    },
+    {
+      "order": 29,
+      "id": "p4-4",
+      "file": "29_P4.4_pregunta-en-lugar-de.png",
+      "type": "principio",
+      "section": "p4",
+      "number": 4,
+      "globalNumber": 25,
+      "title": "Haz preguntas en lugar de dar órdenes",
+      "subtitle": null,
+      "short": "Pregunta en lugar de dar órdenes",
+      "definition": "Una orden genera resistencia; una pregunta invita a pensar y a colaborar. Cuando preguntas —“¿Qué opinas de esto?”, “¿Crees que funcionaría?”— la otra persona conserva su orgullo, se siente parte de la solución y se compromete con ella. Además, muchas veces surgen ideas mejores que la tuya.",
+      "howTo": [
+        "Cambia “haz esto” por “¿qué tal si…?”",
+        "Pregunta: “¿Cómo lo resolverías tú?”",
+        "Invita a mejorar: “¿Se te ocurre una forma mejor?”"
+      ],
+      "alt": "Tarjeta del principio 4 de la Parte 4: Haz preguntas en lugar de dar órdenes."
+    },
+    {
+      "order": 30,
+      "id": "p4-5",
+      "file": "30_P4.5_deja-que-el-otro.png",
+      "type": "principio",
+      "section": "p4",
+      "number": 5,
+      "globalNumber": 26,
+      "title": "Permite que la otra persona salve su prestigio",
+      "subtitle": null,
+      "short": "Deja que el otro salve su prestigio",
+      "definition": "Aunque tengas toda la razón, humillar a alguien destruye su autoestima y la relación. Darle una salida digna —corregir en privado, reconocer lo que sí hizo bien, considerar las circunstancias— le permite cambiar sin sentirse derrotado. Herir la dignidad de una persona deja una marca que difícilmente se borra.",
+      "howTo": [
+        "Corrige siempre en privado, nunca en público",
+        "Ofrece una salida: “Con lo que sabías, era lógico”",
+        "Nunca digas “te lo dije”"
+      ],
+      "alt": "Tarjeta del principio 5 de la Parte 4: Permite que la otra persona salve su prestigio."
+    },
+    {
+      "order": 31,
+      "id": "p4-6",
+      "file": "31_P4.6_elogia-cada-progreso-por.png",
+      "type": "principio",
+      "section": "p4",
+      "number": 6,
+      "globalNumber": 27,
+      "title": "Elogia el más pequeño progreso, y cada progreso",
+      "subtitle": "Sé cálido al aprobar y generoso al elogiar",
+      "short": "Elogia cada progreso, por pequeño que sea",
+      "definition": "Lo que se reconoce, se repite. Elogiar incluso los avances más pequeños motiva a seguir mejorando, igual que un buen entrenador celebra cada pequeño acierto. Elogia con calidez y generosidad, pero siempre de forma específica: lo concreto se percibe sincero y le muestra al otro exactamente qué debe repetir.",
+      "howTo": [
+        "Celebra los avances, no solo los resultados finales",
+        "Sé concreto: “Tu informe ahora es mucho más claro”",
+        "Elogia en el momento, mientras está fresco"
+      ],
+      "alt": "Tarjeta del principio 6 de la Parte 4: Elogia el más pequeño progreso, y cada progreso."
+    },
+    {
+      "order": 32,
+      "id": "p4-7",
+      "file": "32_P4.7_dale-una-buena-reputacion.png",
+      "type": "principio",
+      "section": "p4",
+      "number": 7,
+      "globalNumber": 28,
+      "title": "Dale a la otra persona una buena reputación que mantener",
+      "subtitle": null,
+      "short": "Dale una buena reputación que mantener",
+      "definition": "Las personas tienden a comportarse según la imagen que los demás tienen de ellas. Si quieres que alguien mejore en algo, actúa como si esa virtud ya fuera parte de su carácter y díselo abiertamente. Una buena reputación se convierte en un estándar que el otro se esforzará por no defraudar.",
+      "howTo": [
+        "“Siempre has sido muy cuidadoso; por eso me sorprendió…”",
+        "Reconoce públicamente sus cualidades",
+        "Trata a cada persona como su mejor versión"
+      ],
+      "alt": "Tarjeta del principio 7 de la Parte 4: Dale a la otra persona una buena reputación que mantener."
+    },
+    {
+      "order": 33,
+      "id": "p4-8",
+      "file": "33_P4.8_anima-haz-que-el.png",
+      "type": "principio",
+      "section": "p4",
+      "number": 8,
+      "globalNumber": 29,
+      "title": "Anima a la otra persona",
+      "subtitle": "Haz que el error parezca fácil de corregir",
+      "short": "Anima: haz que el error parezca fácil",
+      "definition": "Si le dices a alguien que es torpe o que no tiene talento para algo, le quitas las ganas de intentarlo. En cambio, si lo animas, le muestras confianza en su capacidad y le haces ver que el error se corrige fácilmente, querrá practicar hasta superarlo. La confianza que pones en el otro se convierte en su motivación.",
+      "howTo": [
+        "Reduce el tamaño del problema: “Esto se arregla rápido”",
+        "Ve paso a paso y celebra cada avance",
+        "Expresa confianza: “Sé que lo vas a lograr”"
+      ],
+      "alt": "Tarjeta del principio 8 de la Parte 4: Anima a la otra persona."
+    },
+    {
+      "order": 34,
+      "id": "p4-9",
+      "file": "34_P4.9_que-se-sienta-feliz.png",
+      "type": "principio",
+      "section": "p4",
+      "number": 9,
+      "globalNumber": 30,
+      "title": "Haz que la otra persona se sienta feliz de hacer lo que le sugieres",
+      "subtitle": null,
+      "short": "Que se sienta feliz de hacer lo que sugieres",
+      "definition": "Una petición funciona mejor cuando el otro gana algo al cumplirla: reconocimiento, aprendizaje, autonomía o una responsabilidad con nombre propio. Piensa qué beneficio real obtiene, plantéalo con sinceridad y hazlo sentir parte del propósito. Cuando alguien siente que la tarea vale la pena, la hace con gusto y no por obligación.",
+      "howTo": [
+        "Explica el “para qué” y cómo lo beneficia",
+        "Dale autonomía y un rol con nombre propio",
+        "Agradece y reconoce el resultado en público"
+      ],
+      "alt": "Tarjeta del principio 9 de la Parte 4: Haz que la otra persona se sienta feliz de hacer lo que le sugieres."
+    },
+    {
+      "order": 35,
+      "id": "parte-6",
+      "file": "35_Parte6_hogar_portada.png",
+      "type": "portada",
+      "section": "hogar",
+      "title": "Parte 6: Siete reglas para hacer más feliz tu vida en el hogar",
+      "summary": "Los mismos principios, aplicados a quien más quieres: menos reproches y críticas; más aceptación, aprecio, detalles y cortesía.",
+      "alt": "Portada de la Parte 6: Siete reglas para hacer más feliz tu vida en el hogar. Incluye 7 reglas."
+    },
+    {
+      "order": 36,
+      "id": "regla-1",
+      "file": "36_Regla1_no-reganes.png",
+      "type": "regla",
+      "section": "hogar",
+      "number": 1,
+      "title": "No regañes",
+      "subtitle": "Los reproches constantes desgastan el amor",
+      "short": "No regañes",
+      "definition": "Los reproches repetidos son una de las formas más rápidas de destruir una relación. Carnegie recuerda cómo la queja constante amargó la vida en casa de Napoleón III, de Tolstói y de Lincoln. Quien vive reprochando no consigue cambios: solo logra que el otro se cierre, se aleje y busque paz fuera de casa.",
+      "howTo": [
+        "Pide una vez, con calma, y luego suelta el tema",
+        "Cambia “siempre” y “nunca” por una petición concreta",
+        "Elige el momento: nada de reproches en caliente"
+      ],
+      "alt": "Tarjeta de la regla 1 de 7: No regañes."
+    },
+    {
+      "order": 37,
+      "id": "regla-2",
+      "file": "37_Regla2_no-intentes-cambiar-a.png",
+      "type": "regla",
+      "section": "hogar",
+      "number": 2,
+      "title": "No intentes cambiar a tu pareja",
+      "subtitle": null,
+      "short": "No intentes cambiar a tu pareja",
+      "definition": "Nadie se enamora de un proyecto de remodelación. Intentar convertir a tu pareja en otra persona le transmite que no es suficiente y solo genera resistencia. Disraeli se casó con una viuda mayor que él, famosa por sus torpezas sociales, y nunca intentó cambiarla; ella, a cambio, hizo de su casa un refugio. Ama a la persona real.",
+      "howTo": [
+        "Distingue lo que te molesta de lo que de verdad importa",
+        "Acepta sus manías como parte del paquete",
+        "Si algo es clave, pídelo una vez y con respeto"
+      ],
+      "alt": "Tarjeta de la regla 2 de 7: No intentes cambiar a tu pareja."
+    },
+    {
+      "order": 38,
+      "id": "regla-3",
+      "file": "38_Regla3_no-critiques.png",
+      "type": "regla",
+      "section": "hogar",
+      "number": 3,
+      "title": "No critiques",
+      "subtitle": "En casa, la crítica hiere el doble",
+      "short": "No critiques",
+      "definition": "En casa bajamos la guardia y decimos cosas que jamás le diríamos a un extraño. Pero la crítica constante en pareja hiere más que en cualquier otro lugar y desgasta la relación día a día. Gladstone, en vez de reprochar a su familia por levantarse tarde, cantaba en voz alta para que supieran que ya los esperaba para desayunar.",
+      "howTo": [
+        "Habla del hecho, no de su forma de ser",
+        "Nunca critiques a tu pareja delante de otros",
+        "Pregúntate: “¿esto ayuda o solo hiere?”"
+      ],
+      "alt": "Tarjeta de la regla 3 de 7: No critiques."
+    },
+    {
+      "order": 39,
+      "id": "regla-4",
+      "file": "39_Regla4_muestra-aprecio-sincero.png",
+      "type": "regla",
+      "section": "hogar",
+      "number": 4,
+      "title": "Muestra aprecio sincero",
+      "subtitle": null,
+      "short": "Muestra aprecio sincero",
+      "definition": "Con los años damos por hecho lo que hace nuestra pareja: la comida, el trabajo, el cuidado de la casa y de los hijos. Lo que no se reconoce termina sintiéndose invisible. Notar y agradecer en voz alta esos esfuerzos, incluso los cotidianos, es una de las formas más sencillas y poderosas de mantener vivo el cariño.",
+      "howTo": [
+        "Agradece lo cotidiano, no solo lo extraordinario",
+        "Elogia a tu pareja frente a otros",
+        "Di qué valoras y por qué: “Me encanta cómo…”"
+      ],
+      "alt": "Tarjeta de la regla 4 de 7: Muestra aprecio sincero."
+    },
+    {
+      "order": 40,
+      "id": "regla-5",
+      "file": "40_Regla5_ten-pequenas-atenciones.png",
+      "type": "regla",
+      "section": "hogar",
+      "number": 5,
+      "title": "Ten pequeñas atenciones",
+      "subtitle": null,
+      "short": "Ten pequeñas atenciones",
+      "definition": "Una relación no se sostiene solo con grandes gestos, sino con detalles constantes: unas flores sin motivo, una nota, un mensaje a mitad del día, recordar un cumpleaños o un aniversario. Para muchas personas, esos detalles valen más que cualquier regalo costoso, porque demuestran algo esencial: que piensas en ellas cuando no están.",
+      "howTo": [
+        "Anota en tu calendario las fechas importantes",
+        "Un detalle pequeño, sin motivo, cada semana",
+        "Pregúntale cómo le fue y escucha de verdad"
+      ],
+      "alt": "Tarjeta de la regla 5 de 7: Ten pequeñas atenciones."
+    },
+    {
+      "order": 41,
+      "id": "regla-6",
+      "file": "41_Regla6_se-cortes.png",
+      "type": "regla",
+      "section": "hogar",
+      "number": 6,
+      "title": "Sé cortés",
+      "subtitle": "Sobre todo con quien más quieres",
+      "short": "Sé cortés",
+      "definition": "Solemos ser más amables con desconocidos que con las personas que más queremos. La cortesía es a la pareja lo que el aceite al motor: evita el desgaste diario. Un “por favor”, un “gracias”, un saludo al llegar o un tono amable cuestan muy poco y cuidan lo más valioso que tienes.",
+      "howTo": [
+        "Trata a tu pareja al menos como tratas a un invitado",
+        "Saluda al llegar y despídete al salir",
+        "Cuida el tono, sobre todo cuando estás cansado"
+      ],
+      "alt": "Tarjeta de la regla 6 de 7: Sé cortés."
+    },
+    {
+      "order": 42,
+      "id": "regla-7",
+      "file": "42_Regla7_lee-un-buen-libro.png",
+      "type": "regla",
+      "section": "hogar",
+      "number": 7,
+      "title": "Lee un buen libro sobre la vida sexual en pareja",
+      "subtitle": "La intimidad también se aprende y se cuida",
+      "short": "Lee un buen libro sobre la vida sexual en pareja",
+      "definition": "Carnegie cita estudios de su época que señalaban la falta de entendimiento en la intimidad como una de las principales causas de infelicidad en el matrimonio. Su consejo sigue vigente: la vida sexual también se aprende. Informarse, hablar con franqueza y sin vergüenza, y pedir ayuda profesional cuando hace falta fortalece la confianza y la conexión.",
+      "howTo": [
+        "Lean juntos un buen libro sobre intimidad en pareja",
+        "Hablen abiertamente de lo que cada uno necesita",
+        "Si hay dificultades, consulten a un terapeuta de pareja"
+      ],
+      "alt": "Tarjeta de la regla 7 de 7: Lee un buen libro sobre la vida sexual en pareja."
+    }
+  ]
+}
